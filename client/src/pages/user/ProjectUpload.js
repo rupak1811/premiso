@@ -10,7 +10,6 @@ import {
   File, 
   X, 
   CheckCircle, 
-  AlertCircle,
   Bot,
   Sparkles,
   Eye,
@@ -20,7 +19,7 @@ import axios from 'axios';
 import toast from 'react-hot-toast';
 
 const ProjectUpload = () => {
-  const { t } = useLanguage();
+  useLanguage();
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     title: '',
